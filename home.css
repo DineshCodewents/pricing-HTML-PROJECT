@@ -1,0 +1,165 @@
+body {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header h1 {
+    padding: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color:hsl(233, 13%, 49%);
+}
+.flex-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column {
+    margin: 0 7px;
+}
+.column label.check-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    margin: 5px 0;
+    color:  hsl(234, 14%, 74%);
+}
+
+#toggle-checkbox {
+    color:  linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    width: 40px;
+    height: 20px;
+}
+
+.image1,
+.image2 {
+    position: fixed;
+    width: 25vw;
+    height: 25vh;
+    z-index: -1;
+}
+
+.image1 {
+    bottom: 10px;
+    left: 0;
+}
+
+.image2 {
+    top: 50px;
+    right: 20px;
+}
+.container {
+    gap: 0;
+    max-width: 850px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+.container .row {
+    padding-right: 0;
+    padding-left: 0;
+    gap:1rem;
+}
+
+.salary-column {
+   
+    background-color: whitesmoke;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: end;
+    margin: 20px;
+    transform: scale(1);
+    transition: transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+}
+
+
+.salary-column:hover {
+    color: white;
+    transform: translateY(-10px) scale(1.05);
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.salary-column:hover .currency,
+.salary-column:hover .dollor,
+.salary-column:hover.details
+.salary-column:hover.details hr {
+    color: white;
+}
+.details hr{
+color: white;
+}
+.salary-column:hover .details {
+    color: white;
+}
+
+.salary-column h2 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.salary-column {
+    color: hsl(233, 13%, 49%);
+    padding: 0;
+    margin: 0;
+
+}
+
+.salary-column .price-container {
+    display: flex;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.currency {
+    font-size: 30px;
+    margin-right: 5px;
+    margin-left: -1px; 
+    color: hsl(232, 13%, 33%);
+}
+
+
+.dollor {
+    color: hsl(232, 13%, 33%);
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 10px;
+    align-items: center;
+    color:white;
+    height: 35px;
+    width: 80%;
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    margin-bottom: 30px;
+}
+.btn:hover {
+    background: white;
+    color: hsl(236, 72%, 79%);
+    border: 1px solid hsl(236, 72%, 79%);
+}
